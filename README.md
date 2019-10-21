@@ -27,7 +27,7 @@ This program is built with **Microsoft Visual Studio Community 2015**, Before yo
 
 
 
-![Preview](/Users/jiataihan/Documents/MyGithubLists/MyGithubLists/README.assets/Preview.png)
+![Preview](README.assets/Preview.png)
 
 
 
