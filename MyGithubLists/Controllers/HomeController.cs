@@ -13,8 +13,7 @@ namespace MyGithubLists.Controllers
         public async System.Threading.Tasks.Task<ActionResult> Index()
         {
             var client = new GitHubClient(new ProductHeaderValue("MyGithubLists"));
-            var basicAuth = new Credentials("Your Github Username", "Your Github Password"); // NOTE: not real credentials
-            client.Credentials = basicAuth;
+            var basicAuth = new Credentials("Your Github Username", "Your Github Password"); // NOTE: Replace with your GitHub username and password
             var user = await client.User.Current();
 
             SearchRepositoryResult results = await client.Search.SearchRepo(
