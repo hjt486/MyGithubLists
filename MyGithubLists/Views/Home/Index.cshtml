@@ -9,6 +9,7 @@
 <table class="table">
     <thead class="thead-dark">
         <tr>
+            <th>#</th>
             <th>Repository</th>
             <th>Stars</th>
             <th>Link</th>
@@ -17,9 +18,10 @@
         </tr>
     </thead>
     <tbody>
+        @{int count = 1;}
         @for (int row = 0; row < Model.GetUpperBound(0); row++)
         {
-            <tr>
+            <tr><td>@count</td>@{count++;}
                 @for (int column = 0; column < Model.GetUpperBound(1); column++)
                 {
                     if (column == 2)

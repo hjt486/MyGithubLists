@@ -13,7 +13,7 @@ namespace MyGithubLists.Controllers
         public async System.Threading.Tasks.Task<ActionResult> Index()
         {
             var client = new GitHubClient(new ProductHeaderValue("MyGithubLists"));
-            var basicAuth = new Credentials("You Github Username", "You Github Password"); // NOTE: Replace with your GitHub username and password
+            var basicAuth = new Credentials("Your Github Username", "Your Github Password"); // NOTE: not real credentials
             client.Credentials = basicAuth;
             var user = await client.User.Current();
 
@@ -23,8 +23,8 @@ namespace MyGithubLists.Controllers
                     SortField = RepoSearchSort.Stars
                 });
 
-            string[,] results_array = new string[25, 6];
-            for (int i = 0; i < 25; i++)
+            string[,] results_array = new string[26, 6];
+            for (int i = 0; i < 26; i++)
             {
                 results_array[i, 0] = results.Items[i].FullName;
                 results_array[i, 1] = results.Items[i].StargazersCount.ToString();

@@ -16,10 +16,10 @@ This program is built with **Microsoft Visual Studio Community 2015**, Before yo
 
 2. Find **Line 16**;
 
-3. Replace **"You Github Username"** with your own Github username, and **"You Github Password"** with your own Github password:
+3. Replace **"Your Github Username"** with your own Github username, and **"Your Github Password"** with your own Github password:
 
 	```c#
-	var basicAuth = new Credentials("You Github Username", "You Github Password"); 
+	var basicAuth = new Credentials("Your Github Username", "Your Github Password"); 
 	// NOTE: Replace with your GitHub username and password
 	```
 	
